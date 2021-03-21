@@ -1,0 +1,183 @@
+html,body {
+  height: 100%;
+  margin: 0
+}
+
+div#header{
+    background-color: #f7dfba;
+    height: 15%;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+div#side{
+    width: 35%;
+    float: left;
+    background-color: #eeeeee;
+    height: 80%;
+}
+
+form button[type="reset"] {
+    float: left;
+    margin-left: 30%;
+}
+
+form button[type="submit"] {
+    float: left;
+    margin-left: 10%;
+}
+
+form p{
+    margin-left: 30%;
+}
+
+form select{
+    margin-left: 30%;
+}
+
+form input{
+    margin-left: 30%;
+    width: 30%;
+}
+
+form p:first-of-type {
+    font-size: large;
+    text-align: center;
+    margin-left: 0px;
+}
+
+div#glavniSadrzaj {
+    background-color: #b8b8cc;
+    
+    width: 65%;
+    height: 80%;
+    float: right;
+    overflow: hidden;
+}
+
+.godina span:nth-child(odd) {
+    margin-left: 20%;
+}
+
+.godina{
+    height: 40%;
+    background-color: #eeeeee;
+    width: 500px;
+    float: left;
+    margin-top: 1.5%;
+    margin-bottom: 6.5%;
+    margin-left: 4%;
+    margin-right: 5%;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+div#footer {
+    background-color: #f7dfba;
+    clear: both;
+    height: 5%;
+    margin-bottom: 0px;
+}
+
+
+div#meni ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div#meni li {
+    float: left;
+}
+
+div#meni li a {
+    text-align: left;
+    padding:5px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div#header img{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+.godina p:first-of-type{
+    font-size: large;
+    text-align: center;
+    margin-left: 0px;
+}
+
+div#meni a{
+    color: #4e473b;
+}
+
+@media (min-width: 0px) and (max-width:600px){
+    div#glavniSadrzaj{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    div#side{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    div#footer{
+        float: left;
+        width: 100%;
+    }
+
+    div#meni{
+        position: relative;
+        clear: both;
+        top: 30%;
+    }
+
+    div#header h1{
+        position: absolute;
+        bottom:0;
+        float:left;        
+        margin-bottom: 0;
+        color: #4e473b;
+    }
+}
+
+@media (min-width: 600px){
+    div#glavniSadrzaj{
+        width: 65%;
+        float: right;
+        margin-bottom: 0px;
+    }
+
+    div#side{
+        width: 35%;
+        float: left;
+        margin-bottom: 0px;
+    }
+
+    div#header h1{
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          color: #4e473b;
+    }
+
+    div#meni{
+        position: absolute;
+        bottom: 0;
+        clear: both;
+        margin-bottom: 0px;
+    }
+}

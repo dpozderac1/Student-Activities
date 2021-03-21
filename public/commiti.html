@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Commiti Forma</title>
+<link rel="stylesheet" type="text/css" href="commitiStil.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="committabela.js"></script>
+</head>
+<body>
+	<div id="header">
+        
+            <img src="logo.png" alt="Logo" id="logo">
+
+        <div id="meni">
+            <ul>
+                <li><a href="zadaci.html">Pregled godina</a></li>
+                <li><a href="addGodina.html">Dodavanje godine</a></li>
+                <li><a href="studenti.html">Pregled studenata</a></li>
+                <li><a href="commiti.html">Pregled commita</a></li>
+                <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                <li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+                <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <h1>Pregled commita</h1>
+    </div>
+
+    <div id="glavni" onsubmit="return false">
+        <p>Student: Neko Nekić, 1234</p>
+        
+        <p>Naziv vježbe/spirale: Vježba 1</p>
+
+        <p>Repozitorij: <a href="#">Hyperlink</a></p>
+        
+        <!--Kreiraj tabelu-->
+        
+        <form action="#" onsubmit="return kreiraj()">
+            Broj zadataka:
+            <input type="number" id="brojZadatka" required>
+            <button type="submit" id="kreirajDugme">Kreiraj tabelu</button>
+        </form>
+        <br>
+
+        <!--Dodaj commit-->
+        <form action="#" onsubmit="return dodaj()">
+            Broj reda:
+            <input type="number" id="brojReda1" required>
+            Url:
+            <input type="text" id="url1" required>        
+            <button id="dodajDugme">Dodaj commit</button>
+        </form>
+
+        <br>
+        <!--Edituj commit-->
+        <form action="#"  onsubmit="return edituj()">
+            Broj reda:
+            <input type="number" id="brojReda2" required>
+            Url:
+            <input type="text" id="url2" required> 
+            Broj commita:
+            <input type="text" id="brojCommita2">
+            <button id="editujDugme">Edituj commit</button>
+        </form>
+
+        <br>
+        <!--Obrisi commit-->
+        <form action="#" onsubmit="return obrisi()">
+            Broj reda:
+            <input type="number" id="brojReda3" required>
+            Broj commita:
+            <input type="text" id="brojCommita3">
+            <button id="obrisiDugme">Obrisi commit</button>
+        </form>
+        </div>
+
+        <br>
+    
+    <div id="footer">
+        <p>Web tehnologije 2018/19</p>
+    </div>
+
+    <script src="commitFunkcije.js"></script>
+</body>
+</html>

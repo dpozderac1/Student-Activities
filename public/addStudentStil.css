@@ -1,0 +1,222 @@
+html,body {
+    height: 100%;
+    margin: 0
+}
+
+body{
+    background-color: #b8b8cc;
+}
+
+div#header{
+    background-color: #f7dfba;
+    height: 15%;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+div#footer{
+    background-color: #f7dfba;
+    clear: both;
+    height: 5%;
+    margin-bottom: 0px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+div#meni ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div#meni li {
+    float: left;
+}
+
+div#meni li a {
+    text-align: left;
+    padding:5px;
+}
+
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div#header img{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+div#glavniSadrzaj{
+    display: flex;
+    justify-content: center;
+
+    height: 80%;
+
+    flex-flow: column;
+    flex: 1 1 auto;
+    margin-bottom: 0px;
+    
+    background-color:#eeeeee;
+    margin: 0 auto;
+    float: left;
+
+    position:absolute;
+    left:0; right:0;
+}
+
+form[name="fPojedinacni"] {
+    background-color: #ede9e3;
+    width: 75%;
+    height: 55%;
+    margin: 0 auto;
+}
+
+form[name="fPojedinacni"] button {
+    float: right;
+    margin-right: 35%;
+}
+
+form[name="fPojedinacni"] p{
+    margin-left: 20%;
+}
+
+form[name="fPojedinacni"] select{
+    margin-left: 20%;
+    width: 30%;
+}
+
+form[name="fPojedinacni"] input{
+    margin-left: 20%;
+    width: 30%;
+}
+
+form[name="fPojedinacni"] p:first-of-type{
+    font-size: large;
+    text-align: center;
+    margin-left: 0px;
+}
+
+
+
+form[name="fMasovni"] {
+    background-color: #ede9e3;
+    width: 75%;
+    height: 35%;
+    margin: 0 auto;
+    margin-top: 2%;   
+}
+
+form[name="fMasovni"] p{
+    margin-left: 20%;
+}
+
+form[name="fMasovni"] select{
+    margin-left: 20%;
+    width: 30%;
+}
+
+form[name="fMasovni"] input{
+    margin-left: 20%;
+    width: 30%;
+}
+
+form[name="fMasovni"] button {
+    float: right;
+    margin-right: 35%;
+}
+
+form[name="fMasovni"] p:first-of-type{
+    font-size: large;
+    text-align: center;
+    margin-left: 0px;
+}
+
+
+p {
+    line-height: 0.5px;
+}
+
+select{
+    width: 10%;
+}
+
+form[name="fNova"] ul {
+    list-style:none;
+    max-height:100%;
+    margin-left: 20%;
+    padding:0;
+    text-indent:10px;
+    border: 1px solid black;
+    width: 20%;
+    text-align: left;
+    background-color: white;
+    height: 20%;
+}
+
+form[name="fNova"] li {
+    line-height:25px;
+}
+
+form[name="fNova"] li:hover{
+    background-color: grey;
+}
+
+div#meni a{
+    color: #4e473b;
+}
+
+
+
+
+@media (min-width: 0px) and (max-width:600px){
+    div#footer{
+        float: left;
+        width: 100%;
+    }
+
+    div#meni{
+        position: relative;
+        clear: both;
+        top: 40%;
+    }
+
+    div#header h1{
+        position: absolute;
+        bottom:0;
+        float:left;        
+        margin-bottom: 0;
+        color: #4e473b;
+    }
+
+    div#glavniSadrzaj{
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px){
+    div#header h1{
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          color: #4e473b;
+    }
+
+    div#meni{
+        position: absolute;
+        bottom: 0;
+        clear: both;
+        margin-bottom: 0px;
+    }
+
+    div#glavniSadrzaj{
+        width: 85%;
+    }
+}

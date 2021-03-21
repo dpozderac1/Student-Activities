@@ -1,0 +1,135 @@
+html,body {
+    height: 100%;
+    margin: 0
+}
+
+div#header{
+    background-color: #f7dfba;
+    height: 15%;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+div#footer{
+    background-color: #f7dfba;
+    clear: both;
+    height: 5%;
+    margin-bottom: 0px;
+}
+
+div#meni ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div#meni li {
+    float: left;
+}
+
+div#meni li a {
+    text-align: left;
+    padding:5px;
+}
+
+
+table {
+    border-collapse: collapse;
+    height: 50%;
+    width: 50%;
+}
+
+table,table th,table td{
+    text-align: center;
+    border: 2px solid #1b3280;
+}
+
+
+table tr:first-child{
+    background-color:#d5d5ed;
+}
+
+table tr td             { width: 5em; }
+table tr td:nth-child(1) { width: 20em;}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div#header img{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+div#glavni{
+    float: left;
+    background-color: #eeeeee;
+    text-align: left;
+
+    padding-top: 5%;
+    padding-left: 5%;
+    
+    margin-bottom: 0px;
+    width: 95%;
+    
+    margin-bottom: 0px;
+}
+
+div#meni a{
+    color: #4e473b;
+}
+
+@media (min-width: 0px) and (max-width:600px){
+    div#footer{
+        float: left;
+        width: 100%;
+    }
+
+    div#meni{
+        position: relative;
+        clear: both;
+        top: 30%;
+    }
+
+    div#header h1{
+        position: absolute;
+        bottom:0;
+        float:left;        
+        margin: 0;
+        color: #4e473b;
+    }
+
+    div#glavni{
+        width: 96%;
+        margin-bottom: 0px;
+        height: 78%;
+    }
+}
+
+@media (min-width: 600px){
+    div#header h1{
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          color: #4e473b;
+          margin: 0;
+    }
+
+    div#meni{
+        position: absolute;
+        bottom: 0;
+        clear: both;
+        margin-bottom: 0px;
+    }
+
+    div#glavni{
+        float: left;
+        margin-bottom: 0px;
+        height: 75%;
+    }
+}

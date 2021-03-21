@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proba</title>
+</head>
+
+<body>
+
+    <p>Poceo sam</p>
+    <script src="ZadaciAjax.js"></script>
+    <script type="text/javascript" src="BitBucket.js"></script>
+    <script>
+        try {
+            var bbucket = new BitBucket("neki key", "neki secret");
+            function ispisi(x) { console.log("Lista studenata: \n" + JSON.stringify(x)); }
+            //sljedeći poziv se treba nalaziti u try-catch bloku:
+            bbucket.ucitaj("wtspirala17762", "rma18Pozderac17940", ispisi);
+        }
+        catch(err){
+            console.log(err);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+body{
+    background-color: #4f87cb;
+    height: 100%;
+    display: table; 
+    margin: 0px;
+}
+
+html{
+    height: 100%;
+}
+
+div#login {
+    width: 50%;
+    height: 50%;	
+    background-color: #eeeeee;
+	
+	position:absolute;
+    left:0; right:0;
+    top:0; bottom:0;
+	margin:auto;
+	
+	max-width:100%;
+	max-height:100%;
+    overflow:auto;
+    
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button[name="login"] {
+    margin-left: 50%;
+}
+
+input[type="password"]{
+    width: 50%;
+}
+
+input[type="text"]{
+    width: 50%;
+}
+
+form{
+    font-size: 100%;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Forma</title>
+<link rel="stylesheet" type="text/css" href="loginStil.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+	<div id="login" onsubmit="return loginValidacija()">
+        <form action="#">
+            username
+            <input type="text" id="username">
+            <br>
+            <br>
+            password
+            <input type="password" id="password"> 
+            <br>
+            <br>
+            
+            <div id="poruka"></div>
+            
+            <input type="submit" name="login" value="Login">                   
+        </form>
+    </div>
+    <script src="validacija.js"></script>
+    <script src="loginValidacija.js"></script>
+</body>
+</html>

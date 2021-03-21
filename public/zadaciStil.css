@@ -1,0 +1,218 @@
+html,body {
+    height: 100%;
+    margin: 0
+  }
+  
+  div#header{
+      background-color: #f7dfba;
+      height: 15%;
+      position: relative;
+      margin-bottom: 0px;
+  }
+  
+  .cetvrtina{
+      width: 35%;
+      float: left;
+      background-color: #eeeeee;
+      text-align: center;
+  
+      display: flex;
+      flex-flow: column;
+      height: 80%;
+      flex: 1 1 auto;
+      margin-bottom: 0px;
+  }  
+  
+  div#footer{
+      background-color: #f7dfba;
+      clear: both;
+      height: 5%;
+      margin-bottom: 0px;
+  }
+  
+  div#meni ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+  
+  div#meni li {
+      float: left;
+  }
+  
+  div#meni li a {
+      text-align: left;
+      padding:5px;
+  }
+  
+  #godina {
+      list-style:none;
+      margin-left: 10%;
+      overflow:scroll;
+      padding:0;
+      text-indent:10px;
+      border: 1px solid black;
+      width: 75%;
+      text-align: left;
+      background-color: white;
+      height: 75%;
+  }
+  
+  #godina li {
+      line-height:25px;
+  }
+  
+  #godina li:hover{
+      background-color: grey;
+  }
+
+  #imena {
+    list-style:none;
+    max-height:100%;
+    margin-left: 10%;
+    overflow:scroll;
+    padding:0;
+    text-indent:10px;
+    border: 1px solid black;
+    width: 75%;
+    text-align: left;
+    background-color: white;
+    height: 67%;
+}
+
+#imena li {
+    line-height:25px;
+}
+
+#imena li:hover{
+    background-color: grey;
+}
+  
+  img{
+      max-width: 100%;
+      max-height: 100%;
+  }
+  
+  div#header img{
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      margin: 0px;
+      padding: 0px;
+  }
+
+  .polovina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-flow: column;
+    height: 80%;
+    flex: 1 1 auto;
+    margin-bottom: 0px;
+
+      background-color:#eeeeee;
+      width: 50%;
+      float: right;
+  }
+
+  .folder{
+      background-color: #ede9e3;
+      box-shadow: 5px 5px #bbbbbb;
+
+      margin-top: 5%;
+      width: 50%;
+
+      height: 40%;
+
+      overflow: hidden;
+  }
+
+  .folder ul{
+    list-style: none;
+
+  }
+
+  .folder li{
+      padding: 10px;
+      display: inline-block;
+      height: auto;
+  }
+
+  .item{
+      background-color: #4388cc;
+      color: #e7d7bc;
+      border:1px solid #1b3280;
+  }
+
+  div#meni a{
+    color: #4e473b;
+}
+
+.cetvrtina p {
+    font-size: large;
+    padding-top: 5%;
+}
+  
+  @media (min-width: 0px) and (max-width:600px){  
+      .cetvrtina{
+          width: 100%;
+          margin-bottom: 0px;
+      }
+  
+      div#header h1{
+          position: absolute;
+          bottom:0;
+          float:left;
+          margin-bottom: 0;
+          margin: 0;
+          color: #4e473b;
+      }
+  
+      div#footer{
+          float: left;
+          width: 100%;
+      }
+
+      .polovina{
+          width: 100%;
+          clear: both;
+      }
+
+      div#meni{
+        position: relative;
+        bottom: 0px;
+        clear: both;
+        margin-bottom: 0px;
+        top: 30%;
+    }
+  }
+  
+  @media (min-width: 600px){  
+      .cetvrtina{
+          width: 25%;
+          float: left;
+          margin-bottom: 0px;
+      }
+  
+      div#header h1{
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          margin: 0;
+          color: #4e473b;
+      }
+
+      .polovina{
+          float: right;
+          width: 50%;
+      }
+
+      div#meni{
+        position: absolute;
+        bottom: 0;
+        clear: both;
+        margin-bottom: 0px;
+    }
+}

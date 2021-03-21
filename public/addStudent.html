@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Student Forma</title>
+    <link rel="stylesheet" type="text/css" href="addStudentStil.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body onload="ucitajGodine();">
+    <div id="header">
+
+        <img src="logo.png" alt="Logo" id="logo">
+
+        <div id="meni">
+            <ul>
+                <li><a href="zadaci.html">Pregled godina</a></li>
+                <li><a href="addGodina.html">Dodavanje godine</a></li>
+                <li><a href="studenti.html">Pregled studenata</a></li>
+                <li><a href="commiti.html">Pregled commita</a></li>
+                <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                <li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+                <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <h1>Dodavanje studenata</h1>
+    </div>
+
+    <div id="glavniSadrzaj">
+        <form name="fPojedinacni" action="#">
+            <p>Forma</p>
+            <br>
+            <select name="sGodina" id="godina">
+                
+            </select>
+            
+            <p>Key</p>
+            <input type="text" name="key" id="key" required>
+            <br>
+            <br>
+            <p>Secret</p>
+            <input type="text" name="secret" id="secret" required>
+            <br>
+            <br>
+
+            <button type="submit" name="submit" onclick="dodavanjeStudenata();return false;">Ucitaj</button>
+            <input type="button" id="dodaj" value="Dodaj" onclick='novaFunkcija();' disabled>
+        </form>
+    </div>
+
+    <div id="footer">
+        <p>Web tehnologije 2018/19</p>
+    </div>
+    <script src="dodavanjeStudenata.js"></script>
+    <script type="text/javascript" src="BitBucket.js"></script>
+    <script src="iscitavanjeGodinaAjax.js"></script>
+    <script src="studentiAjax.js"></script>
+    <!--<script src="validacija.js"></script>
+    <script src="addStudentValidacija.js"></script>-->
+</body>
+
+</html>

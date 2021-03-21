@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Vježba Forma</title>
+    <link rel="stylesheet" type="text/css" href="addVjezbaStil.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body onload="poveziVjezbaAjax();">
+    <div id="header">
+
+        <img src="logo.png" alt="Logo" id="logo">
+
+        <div id="meni">
+            <ul>
+                <li><a href="zadaci.html">Pregled godina</a></li>
+                <li><a href="addGodina.html">Dodavanje godine</a></li>
+                <li><a href="studenti.html">Pregled studenata</a></li>
+                <li><a href="commiti.html">Pregled commita</a></li>
+                <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                <li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+                <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <h1>Dodavanje vježbe/spirale</h1>
+    </div>
+
+    <div id="glavniSadrzaj">
+        <!--<form name="fPostojeca" action="#" onsubmit="return validacijaPostojeca()">-->
+        <form name="fPostojeca" action="/addVjezba" method="POST">
+            <p>Dodavanje postojeće vježbe/ spirale</p>
+            <p>Godina</p>
+            <select name="sGodine" id="godina">
+            </select>
+            <br>
+            <p>Vježbe/Spirale</p>
+            <select name="sVjezbe" id="vjezbe">
+                    <!--<option value="ZadatakX">Zadatak X</option>-->
+            </select>
+
+            <br>
+            <br>
+            <div id="poruka"></div>
+            <input type="submit" name="dodaj" value="Dodaj">
+        </form>
+
+        <!--<form name="fNova" action="#" onsubmit="return validacijaNova()">-->
+        <form name="fNova" action="/addVjezba" method="POST">
+            <p>Nova vježba/spirala</p>
+            <p>Naziv vježbe</p>
+            <input type="text" name="naziv" required>
+            <p>Godina</p>
+            <select name="sGodine" id="godina1">
+            </select>
+            <br>
+            <br>
+            <br>
+            <input type="checkbox" name="spirala">Spirala
+            <div id="poruka1"></div>
+            <button type="submit" name="dodaj">Dodaj</button>
+        </form>
+
+
+        <form name="fPoveziZadatak" action="/pogreska">
+            <p>Povezivanje zadatka</p>
+            <select name="sVjezbe" id="poveziZadatakVjezbe">
+            </select>
+            <br>
+            <br>
+            <select name="sZadatak" id="poveziZadatakZadatak">
+            </select>
+            <br>
+            <br>
+            <input type="submit" name="dZadatak" value="Dodaj zadatak" onclick="pozoviPost();">
+        </form>
+    </div>
+    <div id="footer">
+        <p>Web tehnologije 2018/19</p>
+    </div>
+    <!--<script src="validacija.js"></script>
+    <script src="addVjezbaValidacija.js"></script>-->
+    <script src="iscitavanjeGodinaAjax.js"></script>
+    <script src="poveziVjezbaAjax.js"></script>
+    <script src="iscitavanjeVjezbeAjax.js"></script>
+    <script src="iscitavanjeZadatkaAjax.js"></script>
+</body>
+</html>
